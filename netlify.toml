@@ -1,0 +1,7 @@
+[[plugins]]
+  package = "netlify-plugin-formspree"
+
+[template.environment]
+  VITE_FORMSPREE_PROJECT_ID = "Formspree CLI project ID"
+  FORMSPREE_DEPLOY_KEY = "Formspree CLI project deploy key"
+  DISCORD_WEBHOOK_URL = "Discord webhook URL"

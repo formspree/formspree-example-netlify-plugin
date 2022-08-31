@@ -1801,6 +1801,11 @@ negotiator@^0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
+netlify-plugin-formspree@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-formspree/-/netlify-plugin-formspree-0.0.3.tgz#92bcf063d2ed2ac81cf574ea95795980275f09c0"
+  integrity sha512-QnzVzpTPcOWc6XKoZm6lt/M3A71XXTn4VNuCcXzH1U5gFL8e6Notg/iuHMQBkvOtBNqo/k513DFXlmxXM5DGDw==
+
 node-fetch@~2.6.0:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
