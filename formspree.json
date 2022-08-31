@@ -1,0 +1,14 @@
+{
+  "forms": {
+    "registration-form": {
+      "name": "MAXCON Registration Form",
+      "actions": [
+        {
+          "app": "discord",
+          "type": "sendMessage",
+          "webhookURL": "$DISCORD_WEBHOOK_URL"
+        }
+      ]
+    }
+  }
+}

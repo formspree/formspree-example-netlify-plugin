@@ -1,0 +1,4 @@
+Copyright 2022 Formspree, Inc. 
+
+Licensed under Creative Commons Attribution, Share-Alike version 4.0
+https://creativecommons.org/licenses/by-sa/4.0/
