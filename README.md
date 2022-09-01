@@ -6,6 +6,8 @@ An event registration website powered by Vite and React, configured for easy dep
 
 This template includes the Formspree CLI plugin, along with a formspree.json file pre-configured for a registration form that sends to Discord.
 
+![Discord screenshot](/public/discord-screenshot.png?raw=true "Submission received screenshot")
+
 ## How to deploy
 
 Just click the button!
