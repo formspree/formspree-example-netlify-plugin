@@ -19,7 +19,7 @@ const Detail: FC<PropsWithChildren<{ name: string; title: string }>> = ({
 }) => {
   return (
     <div className="col-span-full sm:col-span-2 bg-white/90 backdrop-blur-sm rounded-xl p-12 flex flex-col justify-center">
-      <h2 className="text-4xl text-orange-900 font-bold mb-4">{name}</h2>
+      <h2 className="text-4xl text-primary font-bold mb-4">{name}</h2>
       <p className="text-2xl text-gray-500 font-normal mb-4">{title}</p>
       <div className="text-xl font-normal">{children}</div>
     </div>

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -9,6 +10,12 @@ module.exports = {
       fontFamily: {
         sans: ["Barlow", ...defaultTheme.fontFamily.sans],
         display: ["Bungee", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        primary: colors.rose[900],
+        secondary: colors.cyan[800],
+        gradientStart: colors.orange[400],
+        gradientEnd: colors.rose[900],
       },
       dropShadow: {
         block: [

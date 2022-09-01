@@ -16,6 +16,7 @@ import License from "../components/License";
 
 import ElonURL from "../assets/Elon_Musk.jpeg";
 import ObamaURL from "../assets/Obama.jpeg";
+import Section from "../components/Section";
 
 function Home() {
   const confTime = new Date("2024-01-03 9:00:00");
@@ -33,14 +34,18 @@ function Home() {
         <br />
         2024
       </BigText>
+
       <div className="w-[80vw] max-w-[800px] mb-20">
+        {/* ---------------- Countdown ---------------- */}
         <div className="inline-block flex flex-wrap justify-center lg:justify-between text-3xl font-bold gap-12 mt-20">
           <BigNumber number={monthsToConf} unit={"months"} />
           <BigNumber number={timeToConf.days as number} unit={"days"} />
           <BigNumber number={timeToConf.hours as number} unit={"hours"} />
         </div>
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl p-12 mt-20">
-          <h1 className="text-4xl font-bold font-sans text-rose-900">
+
+        {/* ---------------- Main info ---------------- */}
+        <Section background="bg-white/90 backdrop-blur-sm">
+          <h1 className="text-4xl font-bold font-sans text-primary">
             {format(confTime, "MMMM do, yyyy")}, Sydney Australia
           </h1>
           <p className="text-xl mt-8">
@@ -50,28 +55,28 @@ function Home() {
 
           <Video />
 
-          <h1 className="text-4xl font-bold font-sans text-rose-900">
+          <h1 className="text-4xl font-bold font-sans text-primary">
             Catch the latest from experts in:
           </h1>
 
           <div className="flex gap-4 justify-around flex-wrap w-full mt-12">
             <div className="flex flex-col justify-center items-center">
-              <NewspaperIcon className="h-40 text-rose-900" />
+              <NewspaperIcon className="h-40 text-primary" />
               <p className="mt-2 text-3xl">Current Events</p>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <PresentationChartLineIcon className="h-40 text-rose-900" />
+              <PresentationChartLineIcon className="h-40 text-primary" />
               <p className="mt-2 text-3xl">Stock Tips</p>
             </div>
             <div className="flex flex-col justify-center items-center">
-              <BeakerIcon className="h-40 text-rose-900" />
+              <BeakerIcon className="h-40 text-primary" />
               <p className="mt-2 text-3xl">Science!</p>
             </div>
           </div>
-        </div>
+        </Section>
 
+        {/* ---------------- Speakers ---------------- */}
         <BigText>Speakers</BigText>
-
         <Speakers>
           <Speakers.Headshot src={ElonURL} />
           <Speakers.Detail name={"Elon Musk"} title={"Quixotic Billionaire"}>
@@ -81,17 +86,21 @@ function Home() {
             </p>
           </Speakers.Detail>
           <Speakers.Headshot src={ObamaURL} />
-          <Speakers.Detail name={"Michelle Obama"} title={"Influencer"}>
+          <Speakers.Detail
+            name={"Michelle Obama"}
+            title={"Former First Lady, Influencer"}
+          >
             <p>
               Michelle hits the stage with a hilarious yet profound one-woman
-              show that recounts her emotional journey from Chicago to
+              show that recounts her harrowing journey from Chicago to
               Washington.
             </p>
           </Speakers.Detail>
         </Speakers>
 
-        <div className="bg-white backdrop-blur-sm rounded-lg p-12 mt-20">
-          <h1 className="text-4xl font-bold font-sans text-rose-900">
+        {/* ---------------- Signup Form ---------------- */}
+        <Section>
+          <h1 className="text-4xl font-bold font-sans text-primary">
             Sign up today!
           </h1>
           <Form className="mt-12">
@@ -125,9 +134,10 @@ function Home() {
             />
             <Form.Submit />
           </Form>
-        </div>
+        </Section>
 
-        <div className="bg-white/90 backdrop-blur-sm rounded-lg p-12 mt-20">
+        {/* ---------------- Footer ---------------- */}
+        <Section>
           <p className="mb-2">© 2022, Formspree, Inc.</p>
           <License className="block mb-2" />
           Photo by{" "}
@@ -138,7 +148,7 @@ function Home() {
           <a href="https://unsplash.com/s/photos/sydney?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
             Unsplash
           </a>
-        </div>
+        </Section>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function App() {
       }
     >
       <div className="bg-[url('assets/background.jpg')] bg-cover bg-[center_top]">
-        <div className="bg-gradient-to-t from-cyan-600 via-white/50 to-white/25">
+        <div className="bg-gradient-to-t from-secondary via-white/50 to-white/25">
           <Home />
         </div>
       </div>
