@@ -6,7 +6,7 @@ import {
   useRef,
 } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import type { FormError } from "@formspree/react/dist/types/src/types";
+import type { FormError } from "@formspree/react";
 
 const FormStatus = createContext<{
   submitting: boolean;
